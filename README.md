@@ -2,9 +2,12 @@
 
 ## TO DO
 
+- [ ] add git info on the page
+- [ ] change favicone
 - [ ] ws firewall setup on gcp
 - [ ] pyconfig setup
-- [ ] domain
+- [ ] domain setup
+- [ ] create mobile website
 
 ## address
 

@@ -14,6 +14,7 @@ http://35.247.86.177:3000/
 - [x] pyconfig setup
 - [ ] domain setup
 - [ ] create mobile website
+- [ ] CI/CD?
 
 ## self hosting setup
 

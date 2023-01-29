@@ -6,10 +6,6 @@ import pynecone as pc
 from home.base_state import State
 from home.pages import index
 
-docs_url = "https://pynecone.io/docs/getting-started/introduction"
-filename = f"{config.app_name}/{config.app_name}.py"
-
-
 # Add state and page to the app.
 app = pc.App(state=State)
 
@@ -22,5 +18,6 @@ app = pc.App(state=State)
 #         description="Write web apps in pure Python. Deploy in minutes.",
 #         image="preview.png",
 #     )
-app.add_page(index)
+app.add_page(index, path="/", title="Dongyoung Kim, Ph.D.",
+             description="Dongyoung Kim, Ph.D. | ARTIFICIAL INTELLIGENCE PROFESSIONAL FOR SCIENCE & INDUSTRY")
 app.compile()

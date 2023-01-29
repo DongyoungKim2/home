@@ -8,7 +8,7 @@ from home.base_state import State
 from home.pages import projects
 
 
-@webpage(path="/")
+# @webpage(path="/")
 def index():
     return pc.center(
         pc.vstack(

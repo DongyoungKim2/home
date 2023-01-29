@@ -14,10 +14,18 @@ class Route(Base):
     path: str
 
     # The page title.
-    title: str | None = None
+    try:
+        title: str
+    except:
+        title: None = None
+    # title: str | None = None
 
     # The component to render for the route.
-    component: pc.Component | Callable[[], pc.Component]
+    try:
+        component: pc.Component
+    except:
+        component: Callable[[], pc.Component]
+    # component: pc.Component | Callable[[], pc.Component]
 
 
 def get_path(component_fn: Callable):

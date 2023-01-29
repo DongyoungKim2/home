@@ -1,4 +1,4 @@
-from home.route import Route
+# from home.route import Route
 from .index import index
 
-routes = [r for r in locals().values() if isinstance(r, Route)]
+# routes = [r for r in locals().values() if isinstance(r, Route)]

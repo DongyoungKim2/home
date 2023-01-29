@@ -6,7 +6,7 @@ from home import constants, styles
 from home.base_state import State
 from home.components.logo import logo
 
-from home.pages.index import index
+# from home.pages.index import index
 
 
 class NavbarState(State):
@@ -15,9 +15,7 @@ class NavbarState(State):
     # Whether the sidebar is open.
     sidebar_open: bool = False
 
-
     search_input: str = ""
-
 
     def toggle_sidebar(self):
         """Toggle the sidebar open state."""
@@ -60,10 +58,10 @@ def navbar(sidebar: pc.Component = None) -> pc.Component:
                     ),
                     spacing="0.25em",
                 ),
-                href=index.path,
+                href="/",
                 _hover={"text_decoration": "none"},
             ),
-            
+
             justify="space-between",
             padding_x=styles.PADDING_X,
         ),

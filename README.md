@@ -1,14 +1,25 @@
 # DYKIM HOME
 
+## address
+
+- hosted at gcp
+
+http://35.247.86.177:3000/
+
 ## TO DO
 
-- [ ] add git info on the page
+- [x] add git info on the page
 - [ ] change favicone
 - [ ] ws firewall setup on gcp
-- [ ] pyconfig setup
+- [x] pyconfig setup
 - [ ] domain setup
 - [ ] create mobile website
 
-## address
+## self hosting setup
 
-http://34.168.26.101:3000/
+- using vm installing python, nodejs etc., -> fail
+- container os and clone on cotainer -> worked
+
+## bugs
+
+- pynecone websocket bug at self-hosting: cannot open ws (and no state works)

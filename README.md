@@ -9,8 +9,8 @@ http://35.247.86.177:3000/
 ## TO DO
 
 - [x] add git info on the page
-- [ ] change favicone
-- [ ] ws firewall setup on gcp
+- [x] change favicone
+- [x] ws firewall setup on gcp
 - [x] pyconfig setup
 - [ ] domain setup
 - [ ] create mobile website

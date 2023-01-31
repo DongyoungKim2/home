@@ -282,7 +282,7 @@ def mobile():
                     pc.accordion_panel(
                         pc.box(padding_top="3%"),
                         pc.flex(
-                            pc.tooltip(
+                            
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/lvlm.png", on_click=State.right_0),
@@ -293,12 +293,11 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="Large Vision-Language Model (LVLM) Training Project (2023)",
-                            ),
+                                
                             projects.lvlm(),
                             # -------------------------------------------
                             pc.spacer(),
-                            pc.tooltip(
+                            
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/ocr.png", on_click=State.right_1),
@@ -312,12 +311,11 @@ def mobile():
                                     spacing="-0.4em",
                                     
                                 ),
-                                label="KB AI-OCR centrerized service platform (2022)",
-                            ),
+                               
                             projects.kbaiocr(),
                             # -------------------------------------------
                             pc.spacer(),
-                            pc.tooltip(
+                            
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/ocr_model.png", on_click=State.right_2),
@@ -330,15 +328,14 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="KB AI-OCR Model Training Project (2022)",
-                            ),
+                                
                             projects.kbaiocrmodel(),
                         ),
                         pc.box(padding_top="8%"),
                         pc.flex(
                             
                             # -------------------------------------------
-                            pc.tooltip(
+                            
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/datalake.png", on_click=State.right_3),
@@ -351,12 +348,11 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="Hyundai Motors Data Lake Engineering Project (2021)",
-                            ),
+                                
                             projects.datalake(),
                             # -------------------------------------------
                             pc.spacer(),
-                            pc.tooltip(
+                           
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/sliocr.png", on_click=State.right_4),
@@ -371,11 +367,10 @@ def mobile():
                                     spacing="-0.4em",
                                     
                                 ),
-                                label="Samsung Life Insurance OCR project (2021)",
-                            ),
+                                
                             projects.sliocr(),
                             pc.spacer(),
-                            pc.tooltip(
+                           
                                 pc.vstack(
                                     pc.avatar(size="xl", name="G S",
                                               on_click=State.right_5),
@@ -389,8 +384,7 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="Graph DB & Context Search Engine (2021)",
-                            ),
+                                
                             projects.graphdb(),
                             width="100%",
                         ),
@@ -398,7 +392,7 @@ def mobile():
                         pc.flex(
                             # -------------------------------------------
                             
-                            pc.tooltip(
+                            
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/aim.png", on_click=State.right_6),
@@ -411,12 +405,11 @@ def mobile():
                                     spacing="-0.4em",
 
                                 ),
-                                label="AI-powered transmitted light microscopy for functional analysis of live cells (2019)",
-                            ),
+                                
                             projects.aim(),
                             # -------------------------------------------
                             pc.spacer(),
-                            pc.tooltip(
+                            
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/hist.png", on_click=State.right_7),
@@ -428,12 +421,11 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="In-silico histology staining on NIR LED array-based quantitative phase imaging (2020)",
-                            ),
+                                
                             projects.hist(),
                             # -------------------------------------------
                             pc.spacer(),
-                            pc.tooltip(
+                           
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/aitomography.png", on_click=State.right_8),
@@ -445,8 +437,7 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="AI assisted rapid tomography imaging modality (2020)",
-                            ),
+                                
                             projects.aitomography(),
                             width="100%",
                         ),
@@ -454,7 +445,7 @@ def mobile():
                         pc.flex(
                             # -------------------------------------------
                             
-                            pc.tooltip(
+                            
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/spinner.png", on_click=State.right_9),
@@ -466,11 +457,10 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="A FIDGET SPINNER FOR THE POINT-OF-CARE DIAGNOSIS OF URINARY TRACT INFECTION (2020)",
-                            ),
+                               
                             projects.spinner(),
                             pc.spacer(),
-                            pc.tooltip(
+                            
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/evident.png", on_click=State.right_10),
@@ -482,12 +472,11 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="EV-IDENT: IDENTIFYING TUMOR-SPECIFIC EXTRACELLULAR VESICLES BY SIZE FRACTIONATION AND SINGLE-VESICLE ANALYSIS (2020)",
-                            ),
+                               
                             projects.evident(),
                             # -------------------------------------------
                             pc.spacer(),
-                            pc.tooltip(
+                           
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/sr.png", on_click=State.right_11),
@@ -499,8 +488,7 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="THREE-DIMENSIONAL SINGLE-MOLECULE LOCALIZATION SUPER-RESOLUTION MICROSCOPY (2016)",
-                            ),
+                                
                             projects.sr(),
                             width="100%",
                         ),
@@ -508,7 +496,7 @@ def mobile():
                         pc.flex(
                             # -------------------------------------------
                             
-                            pc.tooltip(
+                            
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/rmum.png", on_click=State.right_12),
@@ -520,12 +508,11 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="REMOTE FOCUSING MULTIFOCAL PLANE MICROSCOPY FOR THE IMAGING OF 3D SINGLE MOLECULE DYNAMICS WITH CELLULAR CONTEXT  (2016)",
-                            ),
+                                
                             projects.rmum(),
                             # -------------------------------------------
                             pc.spacer(),
-                            pc.tooltip(
+                            
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/her23.png", on_click=State.right_13),
@@ -537,12 +524,11 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="HER2/HER3 SIGNALING OVERCOMES HEREGULIN-INDUCED RESISTANCE TO PI3K INHIBITION IN PROSTATE CANCER (2016)",
-                            ),
+                                
                             projects.her23(),
                             # -------------------------------------------
                             pc.spacer(),
-                            pc.tooltip(
+                            
                                 pc.vstack(
                                     pc.avatar(
                                         size="xl", src="projects/her2.png", on_click=State.right_14),
@@ -554,8 +540,7 @@ def mobile():
                                     style={"cursor": "pointer"},
                                     spacing="-0.4em",
                                 ),
-                                label="THE LEVEL OF HER2 EXPRESSION IS A PREDICTOR OF ANTIBODY-HER2 TRAFFICKING BEHAVIOR IN CANCER CELLS (2016)",
-                            ),
+                               
                             projects.her2(),
                             width="100%",
                         ),

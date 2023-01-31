@@ -4,7 +4,7 @@
 
 - hosted at gcp
 
-http://35.212.187.170:3000/
+http://dongyoungkim.net
 
 ## TO DO
 

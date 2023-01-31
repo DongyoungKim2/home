@@ -18,10 +18,12 @@ def index():
         navbar(),
         pc.mobile_only(
             mobile.mobile(),
+            width="100%",
         ),
         pc.tablet_and_desktop(
             desktop.desktop(),
         ),
         footer(),
         font_family="Inter",
+        width="100%",
     )

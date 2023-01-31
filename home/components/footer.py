@@ -23,11 +23,47 @@ footer_style = {
 def footer(style=footer_style):
     return pc.box(
         pc.vstack(
-            pc.hstack(
-                pc.icon(tag="EmailIcon"),
-                pc.text("Dongyoung.kim@me.com "),
+            pc.mobile_only(
+                pc.vstack(
+                    pc.link(
+                        pc.hstack(
+                            pc.image(src="/github-mark.png", width="20px", height="auto"),
+                            pc.text("@DongyoungKim2/home"),
+                        ),
+                        href="https://github.com/DongyoungKim2/home",
+                    ),
+                    pc.link(
+                        pc.hstack(
+                            pc.icon(tag="EmailIcon"),
+                            pc.text("Dongyoung.kim@me.com "),
+                        ),
+                        href="mailto:Dongyoung.kim@me.com",
+                    ),
+                ),
             ),
-            pc.text("Copyright 2023 | Dongyoung Kim. Ph.D. "),
+            pc.tablet_and_desktop(
+                pc.hstack(
+                    pc.link(
+                        pc.hstack(
+                            pc.image(src="/github-mark.png", width="20px", height="auto"),
+                            pc.text("@DongyoungKim2/home"),
+                        ),
+                        href="https://github.com/DongyoungKim2/home",
+                    ),
+                    pc.text(" | "),
+                    pc.link(
+                        pc.hstack(
+                            pc.icon(tag="EmailIcon"),
+                            pc.text("Dongyoung.kim@me.com "),
+                        ),
+                        href="mailto:Dongyoung.kim@me.com",
+                    ),
+                ),
+            ),
+            pc.link(
+                pc.text("Copyright 2023 Dongyoung Kim. Ph.D. "),
+                href="http://dongyoungkim.net"
+            ),
             width="100%",
 
         ),

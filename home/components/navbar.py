@@ -56,6 +56,14 @@ def navbar(sidebar: pc.Component = None) -> pc.Component:
                             font_color=styles.ACCENT_COLOR_LIGHT,
                         ),
                     ),
+                    pc.mobile_only(
+                        pc.text(
+                            "DONGYOUNG KIM, Ph.D.",
+                            font_size=styles.H4_FONT_SIZE,
+                            font_weight=100,
+                            font_color=styles.ACCENT_COLOR_LIGHT,
+                        ),
+                    ),
                     spacing="0.25em",
                 ),
                 href="/",

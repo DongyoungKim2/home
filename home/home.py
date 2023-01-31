@@ -1,13 +1,15 @@
 """Welcome to Pynecone! This file outlines the steps to create a basic app."""
 from pcconfig import config
-
+from home import styles
 import pynecone as pc
 # from home.pages import routes
 from home.base_state import State
 from home.pages import index
 
 # Add state and page to the app.
-app = pc.App(state=State)
+app = pc.App(state=State,
+    style=styles.BASE_STYLE,
+    stylesheets=styles.STYLESHEETS,)
 
 # Add the pages to the app.
 # for route in routes:

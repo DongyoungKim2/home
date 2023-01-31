@@ -24,6 +24,6 @@ def index():
             desktop.desktop(),
         ),
         footer(),
-        font_family="Inter",
+        font_family="Noto Sans KR",
         width="100%",
     )

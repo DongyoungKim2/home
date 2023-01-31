@@ -44,7 +44,7 @@ def webpage(path: str, title: str = DEFAULT_TITLE, props=None) -> Callable:
                 navbar(),
                 contents(*children, **props),
                 footer(),
-                font_family="Inter",
+                font_family="Noto Sans KR",
                 **props
             )
 

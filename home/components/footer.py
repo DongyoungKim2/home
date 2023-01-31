@@ -4,7 +4,7 @@ from home import styles
 from home.components.logo import logo
 
 footer_item_style = {
-    "font_family": "Inter",
+    "font_family": "Noto Sans KR",
     "font_weight": "500",
     "_hover": {"color": styles.ACCENT_COLOR},
 }

@@ -14,7 +14,7 @@ H2_FONT_SIZE = ["1.8em", "1.9em", "2em"]
 H3_FONT_SIZE = "1.35em"
 H4_FONT_SIZE = "1.1em"
 TEXT_FONT_SIZE = "1em"
-TEXT_FONT_FAMILY = "Inter"
+TEXT_FONT_FAMILY = "Noto Sans KR"
 CODE_FONT_FAMILY = (
     '"Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace'
 )
@@ -47,11 +47,11 @@ DOC_BORDER_RADIUS = "1em"
 
 # The base application style.
 BASE_STYLE = {
+    "font_family": "Noto Sans KR",
     "::selection": {
         "background_color": ACCENT_COLOR_LIGHT,
     },
     pc.Text: {
-        "font_family": "Inter",
         "font_size": 16,
     },
     pc.Divider: {"margin_bottom": "1em", "margin_top": "0.5em"},
@@ -62,6 +62,5 @@ BASE_STYLE = {
 
 # Fonts to include.
 STYLESHEETS = [
-    "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap",
-    "https://fonts.googleapis.com/css2?family=Silkscreen&display=swap",
+    "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap",
 ]

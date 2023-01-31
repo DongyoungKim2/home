@@ -17,7 +17,7 @@ def mobile():
         pc.vstack(
             pc.vstack(
                 pc.box(
-                    height="200px",
+                    height="100px",
                     width="100%",
                 ),
                 pc.vstack(

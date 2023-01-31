@@ -12,7 +12,7 @@ http://35.212.187.170:3000/
 - [x] change favicone
 - [x] ws firewall setup on gcp
 - [x] pyconfig setup
-- [ ] domain setup
+- [x] domain setup
 - [ ] create mobile website
 - [ ] CI/CD?
 

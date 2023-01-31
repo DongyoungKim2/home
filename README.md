@@ -13,7 +13,7 @@ http://35.212.187.170:3000/
 - [x] ws firewall setup on gcp
 - [x] pyconfig setup
 - [x] domain setup
-- [ ] create mobile website
+- [x] create mobile website
 - [ ] CI/CD?
 
 ## self hosting setup

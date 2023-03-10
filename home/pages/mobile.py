@@ -12,7 +12,8 @@ def mobile():
     patenttable = pd.read_csv(constants.PATENTS_URL)
     alist = []
     for i in range(len(patenttable)):
-        alist.append([patenttable.iloc[i]["년도"], patenttable.iloc[i]["특허명"]+" "+patenttable.iloc[i]["특허"]])
+        alist.append([patenttable.iloc[i]["년도"], patenttable.iloc[i]
+                     ["특허명"]+" "+patenttable.iloc[i]["특허"]])
     return pc.center(
         pc.vstack(
             pc.vstack(
@@ -57,7 +58,7 @@ def mobile():
                         pc.box(
                             pc.heading("DONGYOUNG KIM, Ph.D",
                                        font_size="1.7em"),
-                        
+
                             width="100%",
                             padding_left="10px",
                             _hover={
@@ -73,7 +74,7 @@ def mobile():
                             pc.avatar(src="/picture.png", size="md"),
                             pc.link(
                                 pc.button(
-                                    "Curriculum Vitae",
+                                    "CV",
 
                                     background_image="white",
                                     color="#5B42F3",
@@ -104,13 +105,13 @@ def mobile():
                             pc.link(
                                 pc.button(
                                     "BLOG",
-                                    href=constants.BLOG_URL,
+
                                     background_image="white",
-                                    color="#AF40FF",
+                                    color="#5B42F3",
                                     _hover={
                                         "opacity": 0.85,
                                     },
-                                    size="lg",
+                                    size="md",
                                 ),
                                 href=constants.BLOG_URL,
                                 button=True,
@@ -297,265 +298,265 @@ def mobile():
                     pc.accordion_panel(
                         pc.box(padding_top="3%"),
                         pc.flex(
-                            
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/lvlm.png", on_click=State.right_0),
-                                    pc.box(padding_top="20px"),
-                                    pc.text("LVLM",
-                                            as_="strong"),
-                                    pc.text("(2023)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                                
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/lvlm.png", on_click=State.right_0),
+                                pc.box(padding_top="20px"),
+                                pc.text("LVLM",
+                                        as_="strong"),
+                                pc.text("(2023)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.lvlm(),
                             # -------------------------------------------
                             pc.spacer(),
-                            
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/ocr.png", on_click=State.right_1),
-                                    pc.box(padding_top="20px"),
-                                    pc.text("OCR",
-                                            as_="strong"),
-                                    pc.text("Platform",
-                                            as_="strong"),
-                                    pc.text("(2022)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                    
-                                ),
-                               
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/ocr.png", on_click=State.right_1),
+                                pc.box(padding_top="20px"),
+                                pc.text("OCR",
+                                        as_="strong"),
+                                pc.text("Platform",
+                                        as_="strong"),
+                                pc.text("(2022)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+
+                            ),
+
                             projects.kbaiocr(),
                             # -------------------------------------------
                             pc.spacer(),
-                            
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/ocr_model.png", on_click=State.right_2),
-                                    pc.box(padding_top="20px"),
-                                    pc.text("OCR",
-                                            as_="strong"),
-                                    pc.text("Models",
-                                            as_="strong"),
-                                    pc.text("(2022)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                                
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/ocr_model.png", on_click=State.right_2),
+                                pc.box(padding_top="20px"),
+                                pc.text("OCR",
+                                        as_="strong"),
+                                pc.text("Models",
+                                        as_="strong"),
+                                pc.text("(2022)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.kbaiocrmodel(),
                         ),
                         pc.box(padding_top="8%"),
                         pc.flex(
-                            
+
                             # -------------------------------------------
-                            
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/datalake.png", on_click=State.right_3),
-                                    pc.box(padding_top="20px"),
-                                    pc.text("Data",
-                                            as_="strong"),
-                                    pc.text("Lake",
-                                            as_="strong"),
-                                    pc.text("(2021)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                                
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/datalake.png", on_click=State.right_3),
+                                pc.box(padding_top="20px"),
+                                pc.text("Data",
+                                        as_="strong"),
+                                pc.text("Lake",
+                                        as_="strong"),
+                                pc.text("(2021)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.datalake(),
                             # -------------------------------------------
                             pc.spacer(),
-                           
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/sliocr.png", on_click=State.right_4),
-                                    
-                                    pc.box(padding_top="20px"),
-                                    pc.text("SLI",
-                                            as_="strong"),
-                                    pc.text("OCR",
-                                            as_="strong"),
-                                    pc.text("(2021)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                    
-                                ),
-                                
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/sliocr.png", on_click=State.right_4),
+
+                                pc.box(padding_top="20px"),
+                                pc.text("SLI",
+                                        as_="strong"),
+                                pc.text("OCR",
+                                        as_="strong"),
+                                pc.text("(2021)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+
+                            ),
+
                             projects.sliocr(),
                             pc.spacer(),
-                           
-                                pc.vstack(
-                                    pc.avatar(size="xl", name="G S",
-                                              on_click=State.right_5),
-                                    
-                                    pc.box(padding_top="20px"),
-                                    pc.text("Graph",
-                                            as_="strong"),
-                                    pc.text("DB",
-                                            as_="strong"),
-                                    pc.text("(2021)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                                
+
+                            pc.vstack(
+                                pc.avatar(size="xl", name="G S",
+                                          on_click=State.right_5),
+
+                                pc.box(padding_top="20px"),
+                                pc.text("Graph",
+                                        as_="strong"),
+                                pc.text("DB",
+                                        as_="strong"),
+                                pc.text("(2021)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.graphdb(),
                             width="100%",
                         ),
                         pc.box(padding_top="8%"),
                         pc.flex(
                             # -------------------------------------------
-                            
-                            
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/aim.png", on_click=State.right_6),
-                                    
-                                    pc.box(padding_top="20px"),
-                                    pc.text("AIM",
-                                            as_="strong"),
-                                    pc.text("(2019)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
 
-                                ),
-                                
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/aim.png", on_click=State.right_6),
+
+                                pc.box(padding_top="20px"),
+                                pc.text("AIM",
+                                        as_="strong"),
+                                pc.text("(2019)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+
+                            ),
+
                             projects.aim(),
                             # -------------------------------------------
                             pc.spacer(),
-                            
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/hist.png", on_click=State.right_7),
-                                    
-                                    pc.box(padding_top="20px"),
-                                    pc.text("AI-HIST",
-                                            as_="strong"),
-                                    pc.text("(2020)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                                
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/hist.png", on_click=State.right_7),
+
+                                pc.box(padding_top="20px"),
+                                pc.text("AI-HIST",
+                                        as_="strong"),
+                                pc.text("(2020)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.hist(),
                             # -------------------------------------------
                             pc.spacer(),
-                           
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/aitomography.png", on_click=State.right_8),
-                                    
-                                    pc.box(padding_top="20px"),
-                                    pc.text("AI-TM ",
-                                            as_="strong"),
-                                    pc.text("(2020)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                                
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/aitomography.png", on_click=State.right_8),
+
+                                pc.box(padding_top="20px"),
+                                pc.text("AI-TM ",
+                                        as_="strong"),
+                                pc.text("(2020)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.aitomography(),
                             width="100%",
                         ),
                         pc.box(padding_top="8%"),
                         pc.flex(
                             # -------------------------------------------
-                            
-                            
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/spinner.png", on_click=State.right_9),
-                                    
-                                    pc.box(padding_top="20px"),
-                                    pc.text("Dx-figet",
-                                            as_="strong"),
-                                    pc.text("(2021)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                               
+
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/spinner.png", on_click=State.right_9),
+
+                                pc.box(padding_top="20px"),
+                                pc.text("Dx-figet",
+                                        as_="strong"),
+                                pc.text("(2021)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.spinner(),
                             pc.spacer(),
-                            
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/evident.png", on_click=State.right_10),
-                                    
-                                    pc.box(padding_top="20px"),
-                                    pc.text("EV-IDENT",
-                                            as_="strong"),
-                                    pc.text("(2020)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                               
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/evident.png", on_click=State.right_10),
+
+                                pc.box(padding_top="20px"),
+                                pc.text("EV-IDENT",
+                                        as_="strong"),
+                                pc.text("(2020)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.evident(),
                             # -------------------------------------------
                             pc.spacer(),
-                           
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/sr.png", on_click=State.right_11),
-                                    
-                                    pc.box(padding_top="20px"),
-                                    pc.text("SRM",
-                                            as_="strong"),
-                                    pc.text("(2016)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                                
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/sr.png", on_click=State.right_11),
+
+                                pc.box(padding_top="20px"),
+                                pc.text("SRM",
+                                        as_="strong"),
+                                pc.text("(2016)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.sr(),
                             width="100%",
                         ),
                         pc.box(padding_top="8%"),
                         pc.flex(
                             # -------------------------------------------
-                            
-                            
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/rmum.png", on_click=State.right_12),
-                                    
-                                    pc.box(padding_top="20px"),
-                                    pc.text("R-MUM",
-                                            as_="strong"),
-                                    pc.text("(2016)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                                
+
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/rmum.png", on_click=State.right_12),
+
+                                pc.box(padding_top="20px"),
+                                pc.text("R-MUM",
+                                        as_="strong"),
+                                pc.text("(2016)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.rmum(),
                             # -------------------------------------------
                             pc.spacer(),
-                            
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/her23.png", on_click=State.right_13),
-                                    
-                                    pc.box(padding_top="20px"),
-                                    pc.text("HER2/3",
-                                            as_="strong"),
-                                    pc.text("(2016)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                                
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/her23.png", on_click=State.right_13),
+
+                                pc.box(padding_top="20px"),
+                                pc.text("HER2/3",
+                                        as_="strong"),
+                                pc.text("(2016)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.her23(),
                             # -------------------------------------------
                             pc.spacer(),
-                            
-                                pc.vstack(
-                                    pc.avatar(
-                                        size="xl", src="projects/her2.png", on_click=State.right_14),
-                                    
-                                    pc.box(padding_top="20px"),
-                                    pc.text("HER2",
-                                            as_="strong"),
-                                    pc.text("(2016)"),
-                                    style={"cursor": "pointer"},
-                                    spacing="-0.4em",
-                                ),
-                               
+
+                            pc.vstack(
+                                pc.avatar(
+                                    size="xl", src="projects/her2.png", on_click=State.right_14),
+
+                                pc.box(padding_top="20px"),
+                                pc.text("HER2",
+                                        as_="strong"),
+                                pc.text("(2016)"),
+                                style={"cursor": "pointer"},
+                                spacing="-0.4em",
+                            ),
+
                             projects.her2(),
                             width="100%",
                         ),
@@ -690,9 +691,10 @@ def mobile():
                         },
                     ),
                     pc.accordion_panel(
-                        
+
                         pc.data_table(
-                            data=pd.DataFrame(alist, columns=["years","title"]),
+                            data=pd.DataFrame(
+                                alist, columns=["years", "title"]),
                             pagination=True,
                             search=True,
                             sort=True,

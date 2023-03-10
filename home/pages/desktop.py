@@ -97,9 +97,9 @@ def desktop():
                             pc.link(
                                 pc.button(
                                     "BLOG",
-                                    href=constants.BLOG_URL,
+
                                     background_image="white",
-                                    color="#AF40FF",
+                                    color="#5B42F3",
                                     _hover={
                                         "opacity": 0.85,
                                     },

@@ -14,7 +14,7 @@ http://dongyoungkim.net
 - [x] pyconfig setup
 - [x] domain setup
 - [x] create mobile website
-- [ ] CI/CD?
+- [x] CI/CD
 
 ## self hosting setup
 

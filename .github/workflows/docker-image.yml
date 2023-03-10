@@ -53,6 +53,6 @@ jobs:
           
     - name: gcp deploy
       run: |-
-        gcloud compute instances update-container ${{ env.GCE_INSTANCE }}" \
+        gcloud compute instances update-container ${{ env.GCE_INSTANCE }} \
           --zone ${{ env.GCE_INSTANCE_ZONE }} \
           --container-image "dongyoungkim/home:${{ env.VERSION }}"

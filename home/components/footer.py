@@ -27,7 +27,16 @@ def footer(style=footer_style):
                 pc.vstack(
                     pc.link(
                         pc.hstack(
-                            pc.image(src="/github-mark.png", width="20px", height="auto"),
+                            pc.image(src="/green_favicon.png",
+                                     width="20px", height="auto"),
+                            pc.text("BLOG"),
+                        ),
+                        href="https://velog.io/@dongyoungkim",
+                    ),
+                    pc.link(
+                        pc.hstack(
+                            pc.image(src="/github-mark.png",
+                                     width="20px", height="auto"),
                             pc.text("@DongyoungKim2/home"),
                         ),
                         href="https://github.com/DongyoungKim2/home",
@@ -45,7 +54,17 @@ def footer(style=footer_style):
                 pc.hstack(
                     pc.link(
                         pc.hstack(
-                            pc.image(src="/github-mark.png", width="20px", height="auto"),
+                            pc.image(src="/green_favicon.png",
+                                     width="20px", height="auto"),
+                            pc.text("BLOG"),
+                        ),
+                        href="https://velog.io/@dongyoungkim",
+                    ),
+                    pc.text(" | "),
+                    pc.link(
+                        pc.hstack(
+                            pc.image(src="/github-mark.png",
+                                     width="20px", height="auto"),
                             pc.text("@DongyoungKim2/home"),
                         ),
                         href="https://github.com/DongyoungKim2/home",

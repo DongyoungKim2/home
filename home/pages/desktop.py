@@ -94,6 +94,21 @@ def desktop():
                                 button=True,
                                 is_external=True,
                             ),
+                            pc.link(
+                                pc.button(
+                                    "BLOG",
+                                    href=constants.BLOG_URL,
+                                    background_image="white",
+                                    color="#AF40FF",
+                                    _hover={
+                                        "opacity": 0.85,
+                                    },
+                                    size="lg",
+                                ),
+                                href=constants.BLOG_URL,
+                                button=True,
+                                is_external=True,
+                            ),
                         ),
                         height="100px",
                         width="80%",

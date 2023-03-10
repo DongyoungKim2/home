@@ -1,10 +1,9 @@
 name: Docker Image CI
-
 on:
   push:
     branches: ["main"]
 env:
-  VERSION: "0.1.10"
+  VERSION: "0.1.11"
   PROJECT_ID: hybrid-robot-375813
   GCE_INSTANCE: dykim-g5 # instance name
   GCE_INSTANCE_ZONE: us-west1-b # instance zone
@@ -49,3 +48,8 @@ jobs:
           gcloud compute instances update-container "${{ env.GCE_INSTANCE }}" \
             --zone "${{ env.GCE_INSTANCE_ZONE }}" \
             --container-image "dongyoungkim/home:${{ env.VERSION }}"
+
+      - name: gcp reset
+        run: |-
+          gcloud compute instances reset "${{ env.GCE_INSTANCE }}" \
+            --zone "${{ env.GCE_INSTANCE_ZONE }}"

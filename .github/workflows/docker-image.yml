@@ -8,7 +8,6 @@ env:
   PROJECT_ID: hybrid-robot-375813
   GCE_INSTANCE: dykim-g5 # instance name
   GCE_INSTANCE_ZONE: us-west1-b # instance zone
-
   
 jobs:
   build:
@@ -54,6 +53,6 @@ jobs:
           
     - name: gcp deploy
       run: |-
-        gcloud compute instances update-container "$GCE_INSTANCE" \
-          --zone "$GCE_INSTANCE_ZONE" \
+        gcloud compute instances update-container ${{ env.GCE_INSTANCE }}" \
+          --zone ${{ env.GCE_INSTANCE_ZONE }} \
           --container-image "dongyoungkim/home:${{ env.VERSION }}"

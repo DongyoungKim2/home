@@ -5,6 +5,8 @@ config = pc.Config(
     app_name="home",
     db_url="sqlite:///pynecone.db",
     env=pc.Env.PROD,
-    api_url="http://35.212.187.170:8000",
+    api_url="ws://35.212.187.170:8080",
     port="80",
+    backend_port="8080",
+    deploy_url="https://dykim.dev"
 )

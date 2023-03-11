@@ -29,7 +29,7 @@ def footer(style=footer_style):
                         pc.hstack(
                             pc.image(src="/green_favicon.png",
                                      width="20px", height="auto"),
-                            pc.text("BLOG"),
+                            pc.text("dongyoungkim.log"),
                         ),
                         href="https://velog.io/@dongyoungkim",
                     ),
@@ -56,7 +56,7 @@ def footer(style=footer_style):
                         pc.hstack(
                             pc.image(src="/green_favicon.png",
                                      width="20px", height="auto"),
-                            pc.text("BLOG"),
+                            pc.text("dongyoungkim.log"),
                         ),
                         href="https://velog.io/@dongyoungkim",
                     ),

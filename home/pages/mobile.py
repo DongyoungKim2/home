@@ -104,7 +104,7 @@ def mobile():
                             ),
                             pc.link(
                                 pc.button(
-                                    "BLOG",
+                                    "blog",
 
                                     background_image="white",
                                     color="#5B42F3",

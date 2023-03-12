@@ -3,10 +3,10 @@ on:
   push:
     branches: ["main"]
 env:
-  VERSION: "0.1.15"
+  VERSION: "0.1.16"
   PROJECT_ID: hybrid-robot-375813
-  GCE_INSTANCE: dykim-g5 # instance name
-  GCE_INSTANCE_ZONE: us-west1-b # instance zone
+  GCE_INSTANCE: dykim-g5-1 # instance name
+  GCE_INSTANCE_ZONE: us-west1-c # instance zone
 
 jobs:
   build:

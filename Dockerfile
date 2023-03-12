@@ -1,6 +1,8 @@
-FROM genghisyang/pynecone-pip:latest
+# FROM genghisyang/pynecone-pip:latest
 
-RUN pip install pandas
+# RUN pip install pandas
+
+FROM dongyoungkim/home:0.1.7
 
 RUN git clone https://github.com/DongyoungKim2/home.git ./home
 

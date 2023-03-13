@@ -6,7 +6,9 @@ FROM dongyoungkim/home:0.1.7
 
 RUN pip install --upgrade pynecone
 
-RUN rm -rf ./home
+WORKDIR /app
+
+RUN rm -rf /app/home
 
 WORKDIR /app
 

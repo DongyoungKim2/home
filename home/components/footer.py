@@ -43,7 +43,7 @@ def footer(style=footer_style):
                     ),
                     pc.link(
                         pc.hstack(
-                            pc.icon(tag="EmailIcon"),
+                            pc.icon(tag="email"),
                             pc.text("Dongyoung.kim@me.com "),
                         ),
                         href="mailto:Dongyoung.kim@me.com",
@@ -72,7 +72,7 @@ def footer(style=footer_style):
                     pc.text(" | "),
                     pc.link(
                         pc.hstack(
-                            pc.icon(tag="EmailIcon"),
+                            pc.icon(tag="email"),
                             pc.text("Dongyoung.kim@me.com "),
                         ),
                         href="mailto:Dongyoung.kim@me.com",

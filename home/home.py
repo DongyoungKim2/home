@@ -20,6 +20,6 @@ app = pc.App(state=State,
 #         description="Write web apps in pure Python. Deploy in minutes.",
 #         image="preview.png",
 #     )
-app.add_page(index, path="/", title="Dongyoung Kim, Ph.D.",
+app.add_page(index, route="/", title="Dongyoung Kim, Ph.D.",
              description="Dongyoung Kim, Ph.D. | ARTIFICIAL INTELLIGENCE PROFESSIONAL FOR SCIENCE & INDUSTRY")
 app.compile()
